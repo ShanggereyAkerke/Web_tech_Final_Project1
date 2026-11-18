@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=folded1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FORYOU everyday clothing. Explore coordinated essentials, outfit inspiration and your size guide.">
+  <title>Home | FORYOU</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css?v=final1">
+  <link rel="stylesheet" href="css/assignment6.css?v=no-progress1">
+  <link rel="stylesheet" href="css/home.css?v=sections1">
+  <script src="vendor/jquery-4.0.0.min.js" defer></script>
+  <script src="js/auth-store.js?v=final1" defer></script>
+  <script src="js/navigation.js?v=final1" defer></script>
+  <script src="js/script.js?v=final1" defer></script>
+  <noscript><style>img[data-src] { display:none }</style></noscript>
+</head>
+<body class="foryou-home d-flex flex-column min-vh-100">
+<a class="visually-hidden-focusable skip-link" href="#main">Skip to content</a>
+<div data-site-navigation></div>
+<main id="main">
+  <section class="fy-hero" aria-labelledby="welcome">
+    <div class="fy-hero-copy">
+      <h1 id="welcome" class="fy-enter">Made for<br>your days.</h1>
+      <a class="fy-button fy-enter" href="collection.html?view=style2">Explore <svg class="fy-icon" aria-hidden="true"><use href="#fy-arrow"/></svg></a>
+    </div>
+    <div class="fy-hero-art">
+      <figure class="fy-scene fy-enter"><img src="images/studio.jpg" width="1536" height="1024" alt="Two models in FORYOU's coordinated chalk and moss outfits" fetchpriority="high"><figcaption>A little chalk. A little moss. A lot of possibility.</figcaption></figure>
+
+    </div>
+  </section>
+
+  <section class="fy-container fy-categories" aria-labelledby="categories-title">
+    <div class="fy-section-heading"><h2 id="categories-title">Find your next layer.</h2></div>
+    <div class="fy-category-grid" id="home-categories">
+      <a href="collection.html?q=tops&view=style2">Tops</a><a href="collection.html?q=knitwear&view=style2">Knitwear</a><a href="collection.html?q=bottoms&view=style2">Bottoms</a><a href="collection.html?q=outerwear&view=style2">Outerwear</a>
+    </div>
+  </section>
+
+  <section class="fy-container fy-picks" aria-labelledby="picks-title">
+    <div class="fy-section-heading"><h2 id="picks-title">A good place to start.</h2><a class="fy-text-link" id="home-see-all" href="collection.html?view=style2">Browse all 36 pieces <svg class="fy-icon" aria-hidden="true"><use href="#fy-arrow"/></svg></a></div>
+    <div class="fy-filter-row">
+      <div class="fy-filter-group" id="home-filters" role="group" aria-label="Choose a clothing category">
+        <button type="button" data-category="all" aria-pressed="true">All</button>
+        <button type="button" data-category="tops" aria-pressed="false">Tops</button>
+        <button type="button" data-category="knitwear" aria-pressed="false">Knitwear</button>
+        <button type="button" data-category="bottoms" aria-pressed="false">Bottoms</button>
+        <button type="button" data-category="outerwear" aria-pressed="false">Outerwear</button>
+      </div>
+      <p id="home-results" role="status" aria-live="polite">A selection from our 36-piece collection.</p>
+    </div>
+    <div class="fy-product-grid" id="home-products"></div>
+    <noscript><p><a href="collection.html?view=style2">View all 36 pieces with descriptions and prices.</a></p></noscript>
+  </section>
+
+  <section class="fy-campaign" aria-label="Everyday layers collection">
+    <img src="images/everyday-layers-banner.jpg" width="1536" height="1024" alt="Two models in oatmeal knitwear and an olive overshirt beside a contemporary concrete building" loading="lazy">
+  </section>
+
+
+</main>
+<footer class="site-footer fy-footer">
+  <div class="fy-container">
+    <div class="fy-footer-top"><div><h2>A little more FORYOU.</h2><p>Keep the pieces. Find new ways to wear them.</p></div><button class="fy-button fy-button-light" type="button" data-open-popup>Keep in touch <svg class="fy-icon" aria-hidden="true"><use href="#fy-arrow"/></svg></button></div>
+    <a class="footer-wordmark" href="index.html?view=style2" aria-label="FORYOU home">FORYOU.</a>
+    <div class="fy-footer-bottom"><p>Asankhan Shyngys &amp; Shangerey Akerke</p><nav aria-label="Footer navigation"><a href="profile.html?view=auth1">Your profile</a><a href="contact.html?view=style2#questions">Sizing &amp; help</a><a href="about.html?view=style2">Our story</a></nav><p>Local date &amp; time<br><time data-clock>Available with JavaScript</time></p></div>
+  </div>
+</footer>
+<script src="vendor/bootstrap.bundle.min.js"></script>
+<dialog id="subscribe-dialog" aria-labelledby="subscribe-title">
+  <div class="popup-inner">
+    <button type="button" class="close-popup" data-close-popup aria-label="Close subscription form">×</button>
+    <h2 id="subscribe-title">A little FORYOU</h2>
+    <p>Save your email on this device to register your interest in FORYOU updates.</p>
+
+    <form id="subscribe-form" novalidate>
+      <label for="subscriber-email">Email address</label>
+      <input class="form-control" id="subscriber-email" name="email" type="text" inputmode="email" autocomplete="email" aria-describedby="subscriber-email-error">
+      <p class="field-error" id="subscriber-email-error"></p>
+      <button type="submit" class="btn btn-primary w-100">Save email</button>
+      <p class="form-status" id="subscribe-status" role="status"></p>
+    </form>
+  </div>
+</dialog>
+<script src="js/site.js?v=final1" defer></script>
+<script src="js/common.js?v=click-sound1" defer></script>
+<script src="js/products.js?v=final1" defer></script>
+<script src="js/home.js?v=final1" defer></script>
+<script src="js/cart-store.js?v=style2" defer></script>
+</body>
+</html>
